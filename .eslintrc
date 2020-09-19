@@ -1,0 +1,71 @@
+// Compatible with react prettier and typescript
+{
+  // Specifies the ESLint parser for TypeScript
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json",
+    // Allows for the parsing of modern ECMAScript features
+    "ecmaVersion": 2020,
+    // Allows for the use of imports
+    "sourceType": "module"
+  },
+  "rules": {
+    // Disable prop-types as we use TypeScript for type checking
+    "react/prop-types": "off",
+    // Enable prettier rules
+    "prettier/prettier": "error",
+    // interface start with capital I
+    "@typescript-eslint/interface-name-prefix": "off",
+    // allow "any" as type
+    "@typescript-eslint/no-explicit-any": "off",
+    // allow @ts-ignore for testing purposes
+    "@typescript-eslint/ban-ts-ignore": "off",
+    // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
+    "no-prototype-builtins": "off",
+    // Too restrictive: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
+    "react/destructuring-assignment": "off",
+    // Use function hoisting to improve code readability
+    // TODO: https://github.com/typescript-eslint/typescript-eslint/issues/2502
+    /*"no-use-before-define": [
+      "error",
+      { "functions": false, "classes": false, "variables": false }
+    ],*/
+    // Makes no sense to allow type inferrence for expression parameters, but require typing the response
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      { "allowExpressions": true, "allowTypedFunctionExpressions": true }
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": true,
+        "variables": true,
+        "typedefs": true
+      }
+    ]
+  }
+}
