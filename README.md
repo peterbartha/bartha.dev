@@ -1,28 +1,70 @@
+<p>
+  <a href="https://bartha.dev">
+    <img alt="Peter's logo" src="https://raw.githubusercontent.com/peterbartha/bartha.dev/master/src/images/peterbartha-logo.svg" width="150" />
+  </a>
+</p>
+
 # https://bartha.dev personal website
 
 Easily modifiable, and built using modern JavaScript with Node.js, React, Gatsby and many other technologies.
 
-The master branch of this repository contains a simplified and production-ready version of my website. 
+The master branch of this repository contains a simplified and production-ready version of my website.
 
-## Dependencies
+## 📦 Dependencies
 
 Tested with:
+
 - Node.js v14.x.x
 
 [nvm](https://github.com/nvm-sh/nvm#usage) recommended for managing node versions.
 
-## Build
+## 🚀 Build
 
-```
-// TODO
-```
+You can get this site up and running on your local dev environment with these five steps:
 
-## Contributing
+1. **Install the Gatsby CLI.**
+
+   ```shell
+   npm install -g gatsby-cli
+   ```
+
+2. **Clone this repository from GitHub.**
+
+   Clone [bartha.dev] project from GitHub with the following command:
+
+   ```shell
+   git clone git@github.com:peterbartha/bartha.dev.git
+   ```
+
+3. **Install npm dependecies.**
+
+   Next, move into `bartha.dev` directory and start it up:
+
+   ```shell
+   cd bartha.dev/
+   npm ci
+   ```
+
+4. **Start the site in `develop` mode.**
+
+   Start it up:
+
+   ```shell
+   gatsby develop
+   ```
+
+## 🤝 Contributing
 
 Feel free to fork this project and customize with your personal info. Please give me credit by linking back to [https://bartha.dev](https://bartha.dev).
 
-If you implement any nice features or improvements I'd really appreciate if you could open a PR to this project.😉
+If you implement any nice features or improvements I'd really appreciate if you could open a PR to this project. 😉
 
-## License
+## 📜 License
 
 Licensed under the [MIT](https://github.com/peterbartha/bartha.dev/blob/master/LICENSE) License.
+
+My logo is licensed under a [Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License](https://creativecommons.org/licenses/by-nc-nd/4.0/). Please respect that. 🙏
+
+## 💜 Thanks
+
+Thanks to [Netlify](https://www.netlify.com/) for hosting [https://bartha.dev](https://bartha.dev).
