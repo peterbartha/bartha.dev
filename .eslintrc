@@ -6,6 +6,7 @@
     "airbnb-typescript",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
     "prettier",
     "prettier/react",
     "prettier/@typescript-eslint",
@@ -21,7 +22,7 @@
     "node": true,
     "es6": true
   },
-  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "plugins": ["@typescript-eslint", "react", "jest", "prettier"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
