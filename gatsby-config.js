@@ -7,6 +7,7 @@
 module.exports = {
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-plugin-stylelint',
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
