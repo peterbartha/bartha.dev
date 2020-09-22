@@ -6,6 +6,9 @@
 
 # https://bartha.dev personal website
 
+![CI](https://github.com/peterbartha/bartha.dev/workflows/CI/badge.svg?branch=master)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d664bbc6-9879-4384-988d-0a6a59b4b1a7/deploy-status)](https://app.netlify.com/sites/bartha/deploys)
+
 Easily modifiable, and built using modern JavaScript with Node.js, React, Gatsby and many other technologies.
 
 The master branch of this repository contains a simplified and production-ready version of my website.
